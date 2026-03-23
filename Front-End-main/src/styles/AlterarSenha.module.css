@@ -1,0 +1,139 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body, #root{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PÁGINA */
+
+.page{
+    background:black;
+    color:white;
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+
+.header{
+    background:#a40000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    width:100%;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:18px;
+}
+
+.voltar{
+    background:none;
+    border:none;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* CONTEÚDO */
+
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+
+.title{
+    font-size:80px;
+    margin-bottom:50px;
+    letter-spacing:6px;
+}
+
+/* FORM */
+
+.form{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    max-width:900px;
+    gap:20px;
+}
+
+.form input{
+    padding:18px;
+    border-radius:40px;
+    border:none;
+    background:#d9d9d9;
+    font-size:16px;
+    width:100%;
+}
+
+.form button{
+    margin-top:30px;
+    padding:12px 40px;
+    border-radius:30px;
+    border:none;
+    background:#d9d9d9;
+    font-size:18px;
+    cursor:pointer;
+    width:160px;
+    align-self:center;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#a40000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px;
+    width:100%;
+}
+
+.footerCenter{
+    text-align:center;
+}
+
+.footerRight{
+    text-align:right;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .title{
+        font-size:50px;
+    }
+
+    .form{
+        width:85%;
+    }
+
+    .footer{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+}

@@ -1,0 +1,57 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 150px; /* altura do Hero igual ao Footer */
+    background-image: url('../img/Banner.png'); /* ou sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* escurece a imagem */
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.badge {
+    background-color: #8B1B1B; /* mesma cor do footer */
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.primaryBtn {
+    background-color: #8B1B1B;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.secondaryBtn {
+    background-color: white;
+    color: #8B1B1B;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
